@@ -1,20 +1,30 @@
-const moves=["rock","paper","scissor"];
-let mlen= moves.length;
-
-function computerPlay() {
-    return moves[Math.floor(Math.random()*mlen)];
-}
-
-const computerSelection= computerPlay(moves);
-const playerSelection= "rock";
-console.log(computerSelection);
-
 let result;
+
 let win="Oh! You? won?";
 let loss="I won!";
 let draw="Haha!You got lucky.";
 let c=0;
 let p=0;
+
+//the button to play again
+window.onload= function(){
+    document.getElementById('playagain').onclick=function() {
+//vas2 don't touch this block of code
+
+const moves=["rock","paper","scissor"];
+let mlen= moves.length;
+
+//get a random of the three choices
+function computerPlay() {
+    return moves[Math.floor(Math.random()*mlen)];
+}
+
+
+const computerSelection= computerPlay(moves);
+//my choice
+const playerSelection= "rock";
+console.log(computerSelection);
+
 
 function score(playerSelection,computerSelection) {
     // declare win or loss and add points
@@ -38,28 +48,15 @@ function score(playerSelection,computerSelection) {
 
 console.log(score(playerSelection,computerSelection));
 
-// let p=0;
-// let c=0;
-// function points(p,c){
-//     if (result=="win"){
-//         c=c+1;
-//     }
-
-//     else if (result=="loss"){
-//         p=p+1;
-//     }
-
-//     else{
-//         c=c+0.5;
-//         p=p+0.5;
-//     }
-
-//     return c,p;
-// }
-
-// pointsystem=points(c,p);
 console.log("Computer:"+c);
 console.log("Player:"+p);
+
+//the play again function
+}
+
+
+}
+//the play again function
 
 
 
