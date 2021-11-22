@@ -1,15 +1,23 @@
 let result;
+let fscore;
 
 let win="Oh! You? won?";
 let loss="I won!";
 let draw="Haha!You got lucky.";
 let c=0;
 let p=0;
+let i=0;
+Yourname=prompt("Enter your name:");
 
 //the button to play again
 window.onload= function(){
     document.getElementById('playagain').onclick=function() {
 //vas2 don't touch this block of code
+
+
+while(i<=4){
+
+
 
 const moves=["rock","paper","scissor"];
 let mlen= moves.length;
@@ -46,13 +54,37 @@ function score(playerSelection,computerSelection) {
     return result;
 }
 
+i=i+1;
+
 console.log(score(playerSelection,computerSelection));
 
 console.log("Computer:"+c);
 console.log("Player:"+p);
 
 //the play again function
+}//while
+
+let fscore;
+
+function finalscore(c,p) {
+
+    if (c>p){
+        fscore="Computer won!"
+    }
+    else if(c==p){
+        fscore="It's a draw!"
+    }
+
+    else{
+        fscore=Yourname+" "+"won!"
+    }
+    return fscore;
 }
+
+
+console.log(finalscore(c,p));
+
+    }//onload
 
 
 }
