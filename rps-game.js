@@ -15,7 +15,7 @@ window.onload= function(){
 //vas2 don't touch this block of code
 
 
-while(i<=4){
+// while(i<=4){
 
 
 
@@ -62,9 +62,11 @@ console.log("Computer:"+c);
 console.log("Player:"+p);
 
 //the play again function
-}//while
+// }//while
 
 let fscore;
+
+while(i>=5){
 
 function finalscore(c,p) {
 
@@ -83,7 +85,9 @@ function finalscore(c,p) {
 
 
 console.log(finalscore(c,p));
-
+i=0;
+c=0;
+p=0;
     }//onload
 
 
@@ -92,4 +96,4 @@ console.log(finalscore(c,p));
 
 
 
-
+}
