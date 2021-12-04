@@ -9,34 +9,24 @@ let p=0;
 let i=0;
 Yourname=prompt("Enter your name:");
 
-//the button to play again
 window.onload= function(){
     document.getElementById('playagain').onclick=function() {
-//vas2 don't touch this block of code
-
-
-// while(i<=4){
-
-
 
 const moves=["rock","paper","scissor"];
 let mlen= moves.length;
 
-//get a random of the three choices
 function computerPlay() {
     return moves[Math.floor(Math.random()*mlen)];
 }
 
-
 const computerSelection= computerPlay(moves);
-//my choice
 const playerSelection= "rock";
+
 console.log(computerSelection);
 
 
 function score(playerSelection,computerSelection) {
-    // declare win or loss and add points
-
+    
     if (computerSelection=="rock") {
         result=draw;
         c=c+0.5;
@@ -57,12 +47,12 @@ function score(playerSelection,computerSelection) {
 i=i+1;
 
 console.log(score(playerSelection,computerSelection));
-
+document.getElementById("computerscore").innerHTML = c;
+document.getElementById("playerscore").innerHTML = p;
+document.getElementById("playername").innerHTML =Yourname;
+document.getElementById("computer").innerHTML = "Computer";
 console.log("Computer:"+c);
 console.log("Player:"+p);
-
-//the play again function
-// }//while
 
 let fscore;
 
@@ -85,15 +75,12 @@ function finalscore(c,p) {
 
 
 console.log(finalscore(c,p));
+document.getElementById("message").innerHTML =fscore;
 i=0;
 c=0;
 p=0;
-    }//onload
-
-
+    }
+    
 }
-//the play again function
-
-
 
 }

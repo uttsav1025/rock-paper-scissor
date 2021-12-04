@@ -1,8 +1,49 @@
- #playagain{
-     width: 5%;
-     margin: auto;
-     background-color: coral;
-     border-radius: 5px;
-     color: white;
-     cursor: pointer;
- }
+*{
+    font-family: monospace;
+    font-size: 2rem;
+}
+
+body{
+    background-color: chocolate;
+}
+
+.start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7px;
+    align-items: center;
+}
+
+#playagain{
+    margin:1.125rem auto 3.125rem auto;
+    background-color: coral;
+    color: indigo;
+    text-align: center;
+    cursor: pointer;
+}
+
+#user-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.userinput{
+    background-color: khaki;
+    color: midnightblue;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#computerscore,#playerscore{
+ color: cornsilk;
+}
