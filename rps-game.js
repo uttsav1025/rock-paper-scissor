@@ -20,24 +20,37 @@ function computerPlay() {
 }
 
 const computerSelection= computerPlay(moves);
-const playerSelection= "rock";
+
+// rock.addEventListener('click',function(){
+//     playerSelection="rock"
+// });
+
+// paper.addEventListener('click',function(){
+//     playerSelection="paper"
+// });
+
+// scissor.addEventListener('click',function(){
+//     playerSelection="scissor"
+// });
+
+playerSelection=prompt("Enter your move in lowercaps:");
 
 console.log(computerSelection);
 
 
 function score(playerSelection,computerSelection) {
     
-    if (computerSelection=="rock") {
-        result=draw;
-        c=c+0.5;
-        p=p+0.5;
-    }
-    else if(computerSelection=="scissor"){
-        result=loss;
+    if (computerSelection=="rock" && playerSelection=="paper"|| computerSelection=="paper" && playerSelection=="scissor" || computerSelection=="scissor" && playerSelection=="rock") {
+        result=win;
         p=p+1;
     }
+    else if(computerSelection==playerSelection){
+        result=draw;
+        p=p+0.5;
+        c=c+0.5;
+    }
     else{
-        result=win;
+        result=loss;
         c=c+1;
     }
     
