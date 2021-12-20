@@ -1,10 +1,10 @@
 *{
     font-family: monospace;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 body{
-    background-color: chocolate;
+    background-color: #e2e1e0;
 }
 
 .start{
@@ -23,10 +23,18 @@ body{
 
 #playagain{
     margin:1.125rem auto 3.125rem auto;
-    background-color: coral;
+    background-color: #fff;
     color: indigo;
     text-align: center;
     cursor: pointer;
+    border: #fff 0px;
+    border-radius: 9px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#playagain:active{
+    transform: translateY(-0.20em);
 }
 
 #user-input{
@@ -35,15 +43,45 @@ body{
     justify-content: space-around;
 }
 
+.choice{
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#playername,#playerselection{
+    color: grey;
+}
+
 .userinput{
     background-color: khaki;
     color: midnightblue;
     text-align: center;
     padding: 5px;
     cursor: pointer;
+    border: #fff 0px;
     border-radius: 6px;
+    transition: transform 0.1s ease;
 }
 
 #computerscore,#playerscore{
  color: cornsilk;
+}
+
+#message{
+    background-color: #fff;
+    border: #fff 0px;
+    border-radius: 10px;
+    margin: 0.8rem;
+}
+
+.userinput:hover{
+   
+    transform: translateY(-0.30em);
+}
+
+.userinput:active{
+  
+    transform: translateY(0);
 }

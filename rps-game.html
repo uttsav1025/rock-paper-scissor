@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rps-game</title>
+    <link rel="stylesheet" href="rps-game.css">
     <script src="rps-game.js"></script>
+    <script src="https://kit.fontawesome.com/23ec1d83f3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="start">
@@ -13,6 +15,11 @@
     <input type="button" value="START" id="playagain" >
     </label> 
     </div>   
+
+    <div class="choice">
+        <span id="playerselection"></span>
+        <span id="computerselection"></span>
+    </div>
 
     <div id="score">
         <span id="computer"></span> 
@@ -27,13 +34,18 @@
 
     
     <label for="rock">
-    <input type="button" value="ROCK" class="userinput" >
+        <i class="far fa-hand-rock"></i>
+    <input type="button" value="ROCK" class="userinput" id="rock">
     </label>    
+
     <label for="paper">
-    <input type="button" value="PAPER" class="userinput" >
-    </label>    
+        <i class="far fa-hand-paper"></i>
+    <input type="button" value="PAPER" class="userinput" id="paper">
+    </label>   
+
     <label for="scissor">
-    <input type="button" value="SCISSOR" class="userinput" >
+        <i class="far fa-hand-scissors"></i>
+    <input type="button" value="SCISSOR" class="userinput" id="scissor" >
     </label> 
     
     </div>

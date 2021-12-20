@@ -21,21 +21,24 @@ function computerPlay() {
 
 const computerSelection= computerPlay(moves);
 
-// rock.addEventListener('click',function(){
-//     playerSelection="rock"
-// });
+rock.addEventListener('click',function(){
+    playerSelection="rock"
+});
 
-// paper.addEventListener('click',function(){
-//     playerSelection="paper"
-// });
+paper.addEventListener('click',function(){
+    playerSelection="paper"
+});
 
-// scissor.addEventListener('click',function(){
-//     playerSelection="scissor"
-// });
+scissor.addEventListener('click',function(){
+    playerSelection="scissor"
+});
 
-playerSelection=prompt("Enter your move in lowercaps:");
+// playerSelection=prompt("Enter your move in lowercaps:");
 
 console.log(computerSelection);
+
+document.getElementById("playerselection").innerHTML =playerSelection.toUpperCase();
+document.getElementById("computerselection").innerHTML =computerSelection.toUpperCase();
 
 
 function score(playerSelection,computerSelection) {
@@ -62,8 +65,8 @@ i=i+1;
 console.log(score(playerSelection,computerSelection));
 document.getElementById("computerscore").innerHTML = c;
 document.getElementById("playerscore").innerHTML = p;
-document.getElementById("playername").innerHTML =Yourname;
-document.getElementById("computer").innerHTML = "Computer";
+document.getElementById("playername").innerHTML =Yourname.toUpperCase();
+document.getElementById("computer").innerHTML = "COMPUTER";
 console.log("Computer:"+c);
 console.log("Player:"+p);
 
@@ -74,14 +77,14 @@ while(i>=5){
 function finalscore(c,p) {
 
     if (c>p){
-        fscore="Computer won!"
+        fscore=" Computer won! "
     }
     else if(c==p){
-        fscore="It's a draw!"
+        fscore=" It's a draw! "
     }
 
     else{
-        fscore=Yourname+" "+"won!"
+        fscore=" "+Yourname+" "+"won! "
     }
     return fscore;
 }
