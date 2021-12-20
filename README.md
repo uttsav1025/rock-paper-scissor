@@ -1,5 +1,5 @@
 # rock-paper-scissor
-js rock-paper-scissor/top
+***js rock-paper-scissor***
 <!-- a javascript project from the odin project -->
 *screenshot from v2.1025*
 
