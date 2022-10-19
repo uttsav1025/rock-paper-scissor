@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rps-game</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/23ec1d83f3.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/23ec1d83f3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="start">
-    <label for="button">
-    <input type="button" value="START" id="playagain" >
-    </label> 
-    </div>   
+      <label for="button">
+        <input type="button" value="START" id="playagain" />
+      </label>
+    </div>
 
     <div class="choice">
-        <span id="playerselection"></span>
-        <span id="computerselection"></span>
+      <span id="playerselection"></span>
+      <span id="computerselection"></span>
     </div>
 
     <div id="score">
-        <span id="computer"></span> 
-        <span id="computerscore"></span>
-        <span id="playername"></span>
-        <span id="playerscore"></span>
-        <br>
-        <span id="message"></span>
+      <span id="computer"></span>
+      <span id="computerscore"></span>
+      <span id="playername"></span>
+      <span id="playerscore"></span>
+      <br />
+      <span id="message"></span>
     </div>
 
     <div id="user-input">
-
-    
-    <label for="rock">
+      <label for="rock">
         <i class="far fa-hand-rock"></i>
-    <input type="button" value="ROCK" class="userinput" id="rock">
-    </label>    
+        <input type="button" value="ROCK" class="userinput" id="rock" />
+      </label>
 
-    <label for="paper">
+      <label for="paper">
         <i class="far fa-hand-paper"></i>
-    <input type="button" value="PAPER" class="userinput" id="paper">
-    </label>   
+        <input type="button" value="PAPER" class="userinput" id="paper" />
+      </label>
 
-    <label for="scissor">
+      <label for="scissor">
         <i class="far fa-hand-scissors"></i>
-    <input type="button" value="SCISSOR" class="userinput" id="scissor" >
-    </label> 
-    
+        <input type="button" value="SCISSOR" class="userinput" id="scissor" />
+      </label>
     </div>
-
-</body>
+  </body>
 </html>
