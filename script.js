@@ -1,4 +1,3 @@
-let result;
 let fscore;
 
 let win = "Oh! You? won?";
